@@ -1,0 +1,95 @@
+
+/*Allting i "*" gäller övergripande för hela html filen */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Justerar bakgrundsbilden */
+body{
+    background-image: url(Tillbehör/träningframsida.jpg);
+    background-size:100% auto;
+    }
+    /* För att logotypen ska hamna på rätt plats, tonar även bakgrundsbilden*/
+.header{
+    min-height:100vh; /* Visar att 100% av den ursprungliga kroppshöjden tar 100% av visningsområdets höjd */
+    width:100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    
+}
+/* Stylar så att länkarna befinner sig på rätt plats*/
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+    /* Logotypens storlek*/
+nav img{
+    width:150px;
+}
+    /* styling för sidolänkarna*/
+.nav-links{
+    flex: 1; /* Gör flex-objektet anpassat till lägnd och bredd på framsidan*/
+    text-align:right; 
+}
+/* Beskriver positionering mellan länkarna*/
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative; 
+}
+/* Riktar sig mot texten skrivet i punklistan*/
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size:13px;
+}
+/* För att få färgändring*/
+.nav-links ul li::after{
+    content:''; 
+    width:0%;
+    height:2px;
+    background:#f8b281 ;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+    /* Hover elementet aktiveras när muspekaren markerar elementet*/
+.nav-links ul li:hover:after{
+    width:100%;
+}
+    /* Styling för slogantext*/
+.selling-point h2{
+    line-height: 125%;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+.selling-point{
+    margin-top:25vh;
+    color:white;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.701);
+    text-align:center;
+}
+    /* Styling för "Anmäl dig nu" knappen*/
+.cta-main{
+    margin-top:1.5rem;
+    background-color:#f8b281;
+    color:#1b1b1b;
+    padding:0.5rem;
+    font-size:1rem;
+    border:none;
+    border-radius:0.5rem;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.484);
+}
+.cta-main:hover{
+    border:1px solid #ec9455;
+    background: #ec9455;
+    transition:1s;
+}

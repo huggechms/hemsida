@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height:100%;   
+}
+body{
+    background-image: url(Tillbehör/träningframsida.jpg);
+    background-size:100% auto;
+    }
+
+:root{
+    --main-color:#f8b281;
+    --secondary-color:#1b1b1b;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    
+}
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav img{
+    width:150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative; 
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size:13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: var(--main-color);
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover:after{
+    width:100%;
+}
+.rubrik{
+    color:#fff;
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top: 50px;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.562);
+}
+.rubrik p{
+    padding:20px;
+}
+.träning{
+    background-color: #fff;
+    
+}
+
+.hjärna h3{
+    width:80%;
+    margin:auto;
+    padding-top: 50px;
+    font-size:24px;
+    font-weight:600;
+}
+.hjärna img{
+    width:300px;
+    border-radius:10px;
+    float:right;
+        
+}
+.hjärna p {
+    width:90%;
+    margin-left:5%;
+    margin-top:5px;
+    font-weight:300;
+}
+.hjärna ul {
+    width:90%;
+    margin-left:5%;
+    margin-top:15px;
+    font-weight:300;
+}
+
+.kondition h3{
+    font-size:24px;
+    font-weight:600;
+    width:80%;
+    margin:auto;
+    padding-top:50px;
+}
+.kondition img{
+    width:300px;
+    border-radius:10px;
+    float:right;
+
+}
+.kondition p{
+    width:90%;
+    margin-left:5%;
+    margin-top:5px;
+    font-weight:300;
+}
+.kondition ul{
+    width:90%;
+    margin-left:5%;
+    margin-top:15px;
+    font-weight:300;
+}
+
+.styrka h3{
+    font-size:24px;
+    font-weight:600;
+    width:80%;
+    margin:auto;
+    padding-top:50px;
+}
+.styrka img{
+    width:300px;
+    border-radius:10px;
+    float:right;
+}
+.styrka p{
+    width:90%;
+    margin-left:5%;
+    margin-top:5px;
+    font-weight:300;
+}
+.styrka ul{
+    width:90%;
+    margin-left:5%;
+    margin-top:15px;
+    font-weight:300;
+    padding-bottom: 20px;
+
+}
+.källor{ 
+    padding-top: 100px;
+    background-color:  rgba(4, 9, 30, 0.7);
+}
+.källor h3{
+    text-align:center;
+    margin:auto;
+    font-size:30px;
+    font-weight:600;
+    padding-bottom: 100px;
+}
+.källor ul{
+    width:90%;
+    margin-left:5%;
+    margin-top:15px;
+    font-weight:300;
+    padding-bottom:50px;
+}
